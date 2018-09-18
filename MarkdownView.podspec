@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage      = "https://github.com/keitaoouchi/MarkdownView"
   s.license       = { :type => "MIT", :file => "LICENSE" }
   s.author        = { "keitaoouchi" => "keita.oouchi@gmail.com" }
-  s.source        = { :git => "https://github.com/keitaoouchi/MarkdownView.git", :tag => "#{s.version}" }
+  s.source        = { :git => "https://github.com/Chewy-Inc/MarkdownView.git" }
   s.source_files  = "MarkdownView/*.swift"
   s.resource_bundles = {
     'MarkdownView' => ['webassets/dist/*']
