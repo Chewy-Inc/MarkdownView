@@ -112,7 +112,7 @@
 
   /*Style for PDF links*/
   a[href$=".pdf"]{
-      background-image: url(icn_download_pdf.svg);
+      background-image: url(pdf.svg);
       background-position: left;
       background-repeat: no-repeat;
 
@@ -236,8 +236,7 @@
 
   /*Style for PDF links*/
   a[href$=".pdf"]{
-      background-image: url(icn_download_pdf.svg);
-      /* FIXME please supply a dark icon and/or and icon that can be used in both */
+      background-image: url(pdf_dark.svg);
       background-position: left;
       background-repeat: no-repeat;
 
