@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58569565232AE9F30080B3EF /* pdf.svg in Resources */ = {isa = PBXBuildFile; fileRef = 58569563232AE9F30080B3EF /* pdf.svg */; };
+		58569566232AE9F30080B3EF /* pdf_dark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 58569564232AE9F30080B3EF /* pdf_dark.svg */; };
 		FC9CC4C51EC43FA90013238C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FC9CC4BD1EC43FA90013238C /* index.html */; };
 		FC9CC4C61EC43FA90013238C /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = FC9CC4BE1EC43FA90013238C /* main.css */; };
 		FC9CC4C71EC43FA90013238C /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = FC9CC4BF1EC43FA90013238C /* main.js */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58569563232AE9F30080B3EF /* pdf.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = pdf.svg; sourceTree = "<group>"; };
+		58569564232AE9F30080B3EF /* pdf_dark.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = pdf_dark.svg; sourceTree = "<group>"; };
 		FC9CC4BD1EC43FA90013238C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = webassets/dist/index.html; sourceTree = SOURCE_ROOT; };
 		FC9CC4BE1EC43FA90013238C /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = main.css; path = webassets/dist/main.css; sourceTree = SOURCE_ROOT; };
 		FC9CC4BF1EC43FA90013238C /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = webassets/dist/main.js; sourceTree = SOURCE_ROOT; };
@@ -66,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				FC9CC4BD1EC43FA90013238C /* index.html */,
+				58569564232AE9F30080B3EF /* pdf_dark.svg */,
+				58569563232AE9F30080B3EF /* pdf.svg */,
 				FC9CC4BE1EC43FA90013238C /* main.css */,
 				FC9CC4BF1EC43FA90013238C /* main.js */,
 			);
@@ -143,6 +149,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58569565232AE9F30080B3EF /* pdf.svg in Resources */,
+				58569566232AE9F30080B3EF /* pdf_dark.svg in Resources */,
 				FC9CC4C61EC43FA90013238C /* main.css in Resources */,
 				FC9CC4C51EC43FA90013238C /* index.html in Resources */,
 				FC9CC4C71EC43FA90013238C /* main.js in Resources */,
