@@ -1,247 +1,215 @@
+/* MARK: - Layout and font-size, no colors */
+/* Adding margin to the first and last element on the page for proper padding */
+body > :first-child {
+    margin-top: 24px;
+}
+
+body > :last-child {
+    margin-bottom: 0px;
+}
+
+/* Adding padding to the leading and trailing of only the text, not the table */
+h1, h2, h3, h4, h5, h6, li, p {
+    padding: 0 8px;
+}
+
+/* Header elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system;
+}
+
+h4 {
+    font-weight: 550;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 26px;
+}
+
+h5 {
+    font-weight: 550;
+    margin-top: 0;
+    margin-bottom: 6px;
+    line-height: 24px;
+}
+
+/* adding padding to the top of an h5 when it is directly behind another header element */
+h1 + h5, h2 + h5, h3 + h5, h4 + h5, h5 + h5 {
+    margin-top: 24px;
+}
+
+/* paragraph elements */
+p, li {
+    font-family: -apple-system;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 22px;
+}
+
+strong {
+    font-family: -apple-system;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 22px;
+}
+
+table {
+    font-family: -apple-system;
+    width: 100%;
+    margin-bottom: 24px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+}
+
+p + h5 {
+    margin-top: 24px;
+}
+
+/* table element */
+table thead, table tbody {
+    font-size: 15px;
+}
+
+table th {
+    font-weight: 600;
+}
+
+table tr {
+    transition: background-color 0.4s ease-out;
+    font-weight: 400;
+}
+
+table th, table td {
+    font-family: -apple-system;
+    padding: 8px;
+}
+
+/* Adds a margin to the top of a table when it's following directly behind a header element */
+h1 + table, h2 + table, h3 + table, h4 + table, h5 + table {
+    margin-top: 16px;
+}
+
+/* special styling for certain tables such as item number 80624 */
+#detailed-info td:first-child, #Feeding-Instructions td:first-child {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.cw-table td, .cw-table th, .cw-tabs table td, .cw-tabs table th {
+    padding: 8px 12px;
+    font-size: 1.4em;
+    line-height: 1.1em;
+}
+
+/*Style for links*/
+a:link {
+    text-decoration: none;
+}
+
+/*Style for PDF links*/
+a[href$=".pdf"]{
+    background-position: left;
+    background-repeat: no-repeat;
+
+    padding-left: 24px;
+    width: 100%;
+    display: inline-block;
+}
+
+/* MARK: - Light Mode Colors and Assets, no layout */
 @media (prefers-color-scheme: light) {
   body {
-      padding: 0 8px;
       background: #FFFFFF !important;
       color: #000000;
   }
 
-  /* Adding margin to the first and last element on the page for proper padding */
-  body > :first-child {
-      margin-top: 24px;
-  }
-  body > :last-child {
-      margin-bottom: 48px;
-  }
-
-  /* Header elements */
-  h1, h2, h3, h4, h5, h6 {
-      font-family: -apple-system;
-  }
-
-  h4 {
-      font-weight: 550;
-      margin-top: 0;
-      margin-bottom: 16px;
-      line-height: 26px;
-  }
-  h5 {
-      font-weight: 550;
-      margin-top: 0;
-      margin-bottom: 6px;
-      line-height: 24px;
-  }
-
-  /* adding padding to the top of an h5 when it is directly behind another header element */
-  h1 + h5, h2 + h5, h3 + h5, h4 + h5, h5 + h5 {
-      margin-top: 24px;
-  }
-
-  /* paragraph elements */
-  p, li {
-      font-family: -apple-system;
-      font-size: 16px;
-      font-weight: 400;
-      margin-top: 0;
-      margin-bottom: 16px;
-      line-height: 22px;
-  }
-  strong {
-      font-family: -apple-system;
-      font-size: 16px;
-      font-weight: 550;
-      line-height: 22px;
-  }
   table {
-      font-family: -apple-system;
       border-left: 1px solid #CCCCCC;
-      width: 100%;
-      margin-bottom: 24px;
-      border-collapse: collapse;
-      border-spacing: 0;
-      text-align: left;
-  }
-  p + h5 {
-      margin-top: 24px;
   }
 
-  /* table element */
-  table thead, table tbody {
-      font-size: 15px;
-  }
   table th {
       background-color: #F2F2F2;
-      font-weight: 600;
       border-top: 1px solid #CCCCCC;
   }
+
   table tr {
       border-bottom: 1px solid #CCCCCC;
-      transition: background-color 0.4s ease-out;
-      font-weight: 400;
   }
+
   table tr:nth-of-type(even) {
       background-color: #F2F2F2;
   }
+
   table th, table td {
-      font-family: -apple-system;
-      padding: 8px;
       border-right: 1px solid #CCCCCC;
-  }
-  /* Adds a margin to the top of a table when it's following directly behind a header element */
-  h1 + table, h2 + table, h3 + table, h4 + table, h5 + table {
-      margin-top: 16px;
   }
 
   /* special styling for certain tables such as item number 80624 */
   #detailed-info td:first-child, #Feeding-Instructions td:first-child {
-      font-size: 13px;
-      text-transform: uppercase;
       color: #999999;
   }
+
   .cw-table td, .cw-table th, .cw-tabs table td, .cw-tabs table th {
-      padding: 8px 12px;
-      font-size: 1.4em;
-      line-height: 1.1em;
       border-right: 1px solid #CCCCCC;
   }
 
   /*Style for links*/
   a:link {
-      text-decoration: none;
       color: #128CED;
   }
 
   /*Style for PDF links*/
   a[href$=".pdf"]{
       background-image: url(pdf.svg);
-      background-position: left;
-      background-repeat: no-repeat;
-
-      padding-left: 24px;
-      width: 100%;
-      display: inline-block;
   }
 }
 
+/* MARK: - Dark Mode Colors and Assets, no layout */
 @media (prefers-color-scheme: dark) {
   body {
-      padding: 0 8px;
       background: #000000 !important;
       color: #FFFFFF;
   }
 
-  /* Adding margin to the first and last element on the page for proper padding */
-  body > :first-child {
-      margin-top: 24px;
-  }
-  body > :last-child {
-      margin-bottom: 48px;
-  }
-
-  /* Header elements */
-  h1, h2, h3, h4, h5, h6 {
-      font-family: -apple-system;
-  }
-
-  h4 {
-      font-weight: 550;
-      margin-top: 0;
-      margin-bottom: 16px;
-      line-height: 26px;
-  }
-  h5 {
-    font-weight: 550;
-    margin-top: 0;
-    margin-bottom: 6px;
-    line-height: 24px;
-  }
-
-  /* adding padding to the top of an h5 when it is directly behind another header element */
-  h1 + h5, h2 + h5, h3 + h5, h4 + h5, h5 + h5 {
-      margin-top: 24px;
-  }
-
-  /* paragraph elements */
-  p, li {
-      font-family: -apple-system;
-      font-size: 16px;
-      font-weight: 400;
-      margin-top: 0;
-      margin-bottom: 16px;
-      line-height: 22px;
-  }
-  strong {
-      font-family: -apple-system;
-      font-size: 16px;
-      font-weight: 550;
-      line-height: 22px;
-  }
   table {
-      font-family: -apple-system;
       border-left: 1px solid #333333;
-      width: 100%;
-      margin-bottom: 24px;
-      border-collapse: collapse;
-      border-spacing: 0;
-      text-align: left;
-  }
-  p + h5 {
-      margin-top: 24px;
   }
 
-  /* table element */
-  table thead, table tbody {
-      font-size: 15px;
-  }
   table th {
       background-color: #0D0D0D;
-      font-weight: 600;
       border-top: 1px solid #333333;
   }
+
   table tr {
       border-bottom: 1px solid #333333;
-      transition: background-color 0.4s ease-out;
-      font-weight: 400;
   }
+
   table tr:nth-of-type(even) {
       background-color: #0D0D0D;
   }
+
   table th, table td {
-      font-family: -apple-system;
-      padding: 8px;
       border-right: 1px solid #333333;
-  }
-  /* Adds a margin to the top of a table when it's following directly behind a header element */
-  h1 + table, h2 + table, h3 + table, h4 + table, h5 + table {
-      margin-top: 16px;
   }
 
   /* special styling for certain tables such as item number 80624 */
   #detailed-info td:first-child, #Feeding-Instructions td:first-child {
-      font-size: 13px;
-      text-transform: uppercase;
       color: #666666;
   }
+
   .cw-table td, .cw-table th, .cw-tabs table td, .cw-tabs table th {
-      padding: 8px 12px;
-      font-size: 1.4em;
-      line-height: 1.1em;
       border-right: 1px solid #333333;
   }
 
   /*Style for links*/
   a:link {
-      text-decoration: none;
       color: #38A7FF;
   }
 
   /*Style for PDF links*/
   a[href$=".pdf"]{
       background-image: url(pdf_dark.svg);
-      background-position: left;
-      background-repeat: no-repeat;
-
-      padding-left: 24px;
-      width: 100%;
-      display: inline-block;
   }
 }
