@@ -1,4 +1,5 @@
 /* MARK: - Layout and font-size, no colors */
+
 /* Adding margin to the first and last element on the page for proper padding */
 body > :first-child {
     margin-top: 24px;
@@ -18,13 +19,18 @@ h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system;
 }
 
+h2 {
+    font-size: 22px;
+    font-weight: 750;
+    font-style: normal;
+}
+
 h4 {
     font-weight: 550;
     margin-top: 0;
     margin-bottom: 16px;
     line-height: 26px;
 }
-
 h5 {
     font-weight: 550;
     margin-top: 0;
@@ -46,14 +52,12 @@ p, li {
     margin-bottom: 16px;
     line-height: 22px;
 }
-
 strong {
     font-family: -apple-system;
     font-size: 16px;
     font-weight: 550;
     line-height: 22px;
 }
-
 table {
     font-family: -apple-system;
     width: 100%;
@@ -62,7 +66,6 @@ table {
     border-spacing: 0;
     text-align: left;
 }
-
 p + h5 {
     margin-top: 24px;
 }
@@ -71,11 +74,9 @@ p + h5 {
 table thead, table tbody {
     font-size: 15px;
 }
-
 table th {
     font-weight: 600;
 }
-
 table tr {
     transition: background-color 0.4s ease-out;
     font-weight: 400;
@@ -125,6 +126,10 @@ a[href$=".pdf"]{
       color: #000000;
   }
 
+  h2, p, li {
+      color: #333333;
+  }
+
   table {
       border-left: 1px solid #CCCCCC;
   }
@@ -133,7 +138,6 @@ a[href$=".pdf"]{
       background-color: #F2F2F2;
       border-top: 1px solid #CCCCCC;
   }
-
   table tr {
       border-bottom: 1px solid #CCCCCC;
   }
@@ -141,7 +145,6 @@ a[href$=".pdf"]{
   table tr:nth-of-type(even) {
       background-color: #F2F2F2;
   }
-
   table th, table td {
       border-right: 1px solid #CCCCCC;
   }
@@ -171,6 +174,10 @@ a[href$=".pdf"]{
   body {
       background: #000000 !important;
       color: #FFFFFF;
+  }
+
+  h2, p, li {
+      color: #CCCCCC;
   }
 
   table {
