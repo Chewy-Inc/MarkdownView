@@ -103,7 +103,7 @@ open class MarkdownView: UIView {
 extension MarkdownView: WKNavigationDelegate {
 
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        let script = "document.body.scrollHeight;"
+        let script = "var body = document.body; let html = document.documentElement; Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);"
         webView.evaluateJavaScript(script) { [weak self] result, error in
             if let _ = error { return }
 
@@ -126,7 +126,5 @@ extension MarkdownView: WKNavigationDelegate {
         default:
             decisionHandler(.allow)
         }
-
     }
-
 }
